@@ -16,6 +16,7 @@ module.exports={sum,mul,number:123};
 //   var1:var1,
 // };
 
+
 // module.exports=obj;
 
 
