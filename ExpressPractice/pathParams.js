@@ -15,11 +15,19 @@ app.get('/', (req, res) => {
 //   res.send('Hello World!')
 // })
 
-app.get('/:username/:id', (req, res) => {
+app.get('/:username', (req, res) => {
   let {username,id} = req.params;
-
-  res.send(`Hello World! @${username}`)
+  let htmlStr = `<h1>Welcome to the page of @${username}!</h1`
+  //res.send(`Hello World! @${username}`)
+  res.send(htmlStr);
 })
+
+
+// app.get('/:username/:id', (req, res) => {
+//   let {username,id} = req.params;
+
+//   res.send(`Hello World! @${username}`)
+// })
 
 
 app.listen(port, () => {
